@@ -2,7 +2,7 @@
 -- Table structure for table 'users'
 --
 
-USE PHPAdvClassSpring2017;
+USE AdvancedPHP;
 
 CREATE TABLE IF NOT EXISTS `users` (
 `user_id` INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
