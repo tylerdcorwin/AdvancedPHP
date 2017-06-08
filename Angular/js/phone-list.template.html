@@ -1,0 +1,7 @@
+<h1>Phones</h1>
+<!--the class phone is getting its information from the ajax call located in the phones-detail.controller.js file-->
+<ul class="phone">
+    <li ng-repeat="phone in vm.phones">
+        <a href="#phones/{{phone.id}}">{{phone.name | uppercase}}<br /><img ng-src="{{phone.imageUrl}}"></a>
+    </li>
+</ul>

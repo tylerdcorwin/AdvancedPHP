@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular JS - Phones Sample App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body ng-app="app">
+        
+        <div ng-view></div>
+        <!--getting the view from the phone-list.controller and .template
+        this will allow for augmentation to the html within the modules-->
+        
+         <script src="./js/lib/angular.js" type="text/javascript"></script>
+         <script src="./js/lib/angular-route.js" type="text/javascript"></script>
+         <!--call in the app.js like a route table in php-->
+         <script src="./js/app.js" type="text/javascript"></script>
+         <script src="./js/phone-list.controller.js" type="text/javascript"></script>
+         <script src="./js/phone-detail.controller.js" type="text/javascript"></script>
+         <script src="./js/constant.js" type="text/javascript"></script>
+         <script src="./js/phones.service.js" type="text/javascript"></script>
+          
+    </body>
+</html>

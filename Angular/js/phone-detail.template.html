@@ -1,0 +1,8 @@
+<!--using the double curly braces calls in the variable-->
+<h1>{{vm.phone.name | uppercase}}</h1>
+
+<div class="content">
+    <img ng-src="{{vm.phone.imageUrl}}" />
+    <p ng-if="vm.phone.carrier.length > 0"><strong>Carrier:</strong> {{vm.phone.carrier}}</p>
+    <p>{{vm.phone.snippet}}</p>
+</div>
