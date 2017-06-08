@@ -2,7 +2,7 @@
 -- Table structure for table `corps`
 --
 
-USE PHPAdvClassSpring2017;
+USE AdvancedPHP;
 
 CREATE TABLE `corps` (
 `id` mediumint(8) unsigned NOT NULL auto_increment,
