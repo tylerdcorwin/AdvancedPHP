@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular JS - Sample App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/app.css">
+        <!-- https://developers.google.com/maps/documentation/geolocation/get-api-key -->
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBAYzMS80xqWNPeURbSNT4aVHqKsnvW3dk"></script>
+    </head>
+    <body ng-app="app">
+        <a href="#/corp">Corp</a>
+        <div ng-view ng-cloak></div>        
+        <script src="js/lib/angular.js" type="text/javascript"></script>
+        <script src="js/lib/angular-route.js" type="text/javascript"></script>
+        <script src="js/app.module.js" type="text/javascript"></script>               
+        <script src="js/corp/corp.module.js" type="text/javascript"></script>               
+        <script src="js/corp/corp.config.js" type="text/javascript"></script>               
+        <script src="js/corp/corp.routes.js" type="text/javascript"></script>               
+        <script src="js/corp/corp.controller.js" type="text/javascript"></script>   
+        <script src="js/corp/corp-detail.controller.js" type="text/javascript"></script>   
+        <script src="js/corp/corp.service.js" type="text/javascript"></script>    
+      
+    </body>
+</html>

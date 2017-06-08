@@ -1,0 +1,39 @@
+<h1>Corp Details</h1>
+
+<div class="content">
+    
+    <h3>Search</h3>
+    <!-- https://docs.angularjs.org/api/ng/filter/filter -->
+    <br />
+    <br /> 
+    
+    <table class="gridtable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Corp</th>                
+                <th>Date Created</th>
+                <th>Email</th>
+                <th>Owner</th>
+                <th>Phone</th>
+                <th>Location</th>
+                
+            </tr>
+        </thead>    
+        
+        <tr>            
+            <td>{{vm.corp.id}}</td>   
+            <td>{{vm.corp.corp}}</td>                  
+            <td>{{vm.corp.incorp_dt | date:'longDate'}}</td>
+            <td><a href="mailto:{{vm.corp.email}}">{{vm.corp.email}} </a></td>
+            <td>{{vm.corp.owner}}</td>
+            <td><a href="tel:{{vm.corp.phone}}">{{vm.corp.phone}}</a></td>
+            <td>{{vm.corp.location}}</td>
+            <td><a ng-href="#/corp/{{corp.id}}">Back</a></td>
+            
+        </tr>
+    </table>
+    <div class="googleMap"></div>
+        
+</div>
+

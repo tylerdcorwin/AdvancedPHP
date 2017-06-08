@@ -1,0 +1,23 @@
+<h1>Address Details</h1>
+
+<div class="content">
+    
+    <h2>{{vm.address.fullname | uppercase}}</h2>
+
+    <p><strong> Born on:</strong> {{ vm.address.birthday | date:'longDate' }} </p>
+
+    <p><strong>Email: </strong>
+        <a href="" ng-href="mailto:{{vm.address.email}}">{{vm.address.email}}</a>
+    </p>
+
+    <address>
+        {{vm.address.addressline1}} <br />
+        {{vm.address.city}}, {{vm.address.state}} {{vm.address.zip}}
+    </address>
+    
+    
+    <div class="googleMap"></div>
+    
+    
+    <p><a href="#/address">Back</a></p>
+</div>

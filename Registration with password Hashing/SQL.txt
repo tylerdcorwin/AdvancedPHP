@@ -1,0 +1,16 @@
+--
+-- Table structure for table 'users'
+--
+
+USE PHPAdvClassSpring2017;
+
+CREATE TABLE IF NOT EXISTS `users` (
+`user_id` INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+`email` VARCHAR(150) NOT NULL UNIQUE KEY, 
+`password` VARCHAR(60) COLLATE utf8_unicode_ci NOT NULL,
+`created` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+--
+-- END
+--

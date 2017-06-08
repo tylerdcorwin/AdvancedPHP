@@ -1,0 +1,32 @@
+<h1>Coporation Table</h1>
+
+<div class="content">
+    
+    <h3>Search</h3>
+    <!-- https://docs.angularjs.org/api/ng/filter/filter -->
+    <br />
+    <br /> 
+    
+    
+    <strong>Search:</strong><input ng-model="searchText">
+    <table class="gridtable">
+        <thead>
+            <tr>
+                
+                <th>Corp</th>                
+                
+                
+            </tr>
+        </thead>    
+        
+        <tr ng-repeat="corp in vm.corps | filter:searchText">            
+               
+            <td>{{corp.corp}}</td>                  
+            
+            <td><a ng-href="#/corp/{{corp.id}}">View</a></td>
+            
+        </tr>
+    </table>
+        
+</div>
+
